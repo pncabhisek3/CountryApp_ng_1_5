@@ -1,0 +1,54 @@
+div.country-details-wrapper {
+  border: 2px solid grey;
+  display: table;
+  padding: 5px;
+  font-size: 0.9em;
+}
+table.country-table {
+  border: 2px solid darkgrey;
+  margin: 0;
+}
+
+table.country-table thead th {
+  background: darkgrey;
+  color: brown;
+}
+
+table.country-table tr:nth-child(even) {
+  background: gainsboro;
+}
+
+table.country-table tbody td {
+  padding: 5px;
+}
+
+table.country-table tr:hover {
+  background: lightslategray;
+  color: white;
+}
+
+table.country-table tr:hover button#edit{
+  background: whitesmoke;
+  color: black;
+}
+
+button {
+  color: black;
+  width: 5em;
+  border: none;
+  border-radius: 2px;
+  padding: 5px;
+}
+button#edit{
+    background-color: grey;
+    color:white;
+}
+
+button#delete{
+    background-color: firebrick;
+    color:white;
+}
+
+button:hover {
+  cursor: pointer;
+}

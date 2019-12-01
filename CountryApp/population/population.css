@@ -1,0 +1,19 @@
+.population-wrapper {
+  border: 2px solid teal;
+  padding: 5px;
+}
+
+table.add-population-table {
+  background: whitesmoke;
+  padding: 5px;
+}
+
+.add-population-btn#add-population-btn {
+  background-color: yellowgreen;
+  color: white;
+}
+
+.add-population-btn#clear-population-btn {
+  background-color: grey;
+  color: white;
+}

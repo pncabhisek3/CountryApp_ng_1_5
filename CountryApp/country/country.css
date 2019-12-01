@@ -1,0 +1,18 @@
+div.country-wrapper{
+  border: 2px solid orange;
+  padding: 5px;
+}
+table.add-country-table {
+  background: whitesmoke;
+  padding: 5px;
+}
+
+.add-country-btn#add-country-btn {
+  background-color: yellowgreen;
+  color: white;
+}
+
+.add-country-btn#clear-country-btn {
+  background-color: grey;
+  color: white;
+}

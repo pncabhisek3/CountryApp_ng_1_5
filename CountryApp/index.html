@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Country App</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./countryDetails/countryDetails.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./country/country.css" />
+    <link rel="stylesheet" type="text/css" href="./population/population.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script src="./countryDetails/countryDetailsComponent.js"></script>
+    <script src="./country/countryComponent.js"></script>
+    <script src="./population/populationComponent.js"></script>
+  </head>
+  <body>
+    <div ng-app="countryDetailsApp">
+      <country-details-comp />
+    </div>
+  </body>
+</html>

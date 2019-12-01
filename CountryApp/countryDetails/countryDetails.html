@@ -1,0 +1,28 @@
+<div class="country-details-wrapper">
+  <h3><u>Country Details Widget</u></h3>
+  <table class="country-table">
+    <thead>
+      <tr>
+        <th>Country</th>
+        <th>Capital</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="country in $ctrl.countries">
+        <td>{{country.name}}</td>
+        <td>{{country.capital}}</td>
+        <td>
+          <div>
+            <button id="edit">Edit</button>
+            <button id="delete">Delete</button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br />
+
+  <div class="child-target">
+  </div>
+</div>
