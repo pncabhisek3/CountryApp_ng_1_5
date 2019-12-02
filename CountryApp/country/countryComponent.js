@@ -3,9 +3,20 @@ let countryApp = angular
   .component("countryComponent", {
     templateUrl: "./country/countryTemplate.html",
     bindings: {},
-    controller: function countryContrlller($scope, $element, $compile) {
-      // Rendering child-component dynamically..
-      let content = $compile("<population-component/>")($scope);
-      $(".another-child-target").append(content);
+    controller: function countryContrlller($scope, $element, $compile, countryService, countryDetailService) {
+      
+      this.$onInit =function(){
+        // Rendering child-component dynamically..
+      };
+      
+      this.showPopulationComponent= function(){
+        let content = $compile("<population-component/>")($scope);;
+        $(".population-target").append(content);
+        countryService.setChildComponent(content);
+      }
+
+      this.closeCountryComponent= function(){
+        countryDetailService.unrenderComponent();
+      }
     }
   });

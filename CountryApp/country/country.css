@@ -1,10 +1,18 @@
-div.country-wrapper{
-  border: 2px solid orange;
-  padding: 5px;
+div.country-wrapper {
+  display: flex;
+  flex-wrap: wrap;
 }
+
+div.cols {
+  flex-basis: 50%;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
 table.add-country-table {
   background: whitesmoke;
   padding: 5px;
+  width: 100%;
 }
 
 .add-country-btn#add-country-btn {
@@ -14,5 +22,10 @@ table.add-country-table {
 
 .add-country-btn#clear-country-btn {
   background-color: grey;
+  color: white;
+}
+
+.add-country-btn#add-population-btn {
+  background-color:slateblue;
   color: white;
 }

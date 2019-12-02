@@ -1,5 +1,13 @@
 <div class="population-wrapper">
-  <h3><u>Population Widget</u></h3>
+  <h3>
+    <span>Population Widget</span>
+    <span style="float: right; margin-top: -2.5px;" title="Close">
+        <button style="float: right; width: 2em; background: yellow;" id="add"
+          ng-click="$ctrl.closePopulationComponent()">
+          X
+        </button>
+      </span>
+  </h3>
   <table class="add-population-table">
     <tbody>
       <tr>
@@ -11,12 +19,10 @@
         <td><input type="number" ng-model="$ctrl.population.population" /></td>
       </tr>
       <tr>
-        <td>
+        <td colspan="2">
           <button class="add-population-btn" id="clear-population-btn">
             clear
           </button>
-        </td>
-        <td>
           <button class="add-population-btn" id="add-population-btn">
             Add
           </button>

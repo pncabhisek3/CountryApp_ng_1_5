@@ -7,11 +7,10 @@ let countryDetailsComp = angular
   .component("countryDetailsComp", {
     templateUrl: "./countryDetails/countryDetails.html",
     bindings: {},
-    
-    controller: function countryDetailsController($scope, $element, $compile) {
+
+    controller: function countryDetailsController($scope, $element, $compile, countryDetailService) {
       var $countryCtrl = this;
       $countryCtrl.countries = null;
-      
       this.$onInit = function() {
         $countryCtrl.countries = [
           {
@@ -30,17 +29,13 @@ let countryDetailsComp = angular
             name: "Austrelia",
             capital: "Cidney"
           }
-
-          
         ];
-
+      };
+      this.showChildComponent = function() {
         // Rendering child-component dynamically..
         let content = $compile("<country-component/>")($scope);
-        console.log(content);
-        
+        countryDetailService.setChildComponent(content);
         $(".child-target").append(content);
-       
       };
-      this.$postLink = function() {};
     }
   });

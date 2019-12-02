@@ -1,5 +1,14 @@
 <div class="country-details-wrapper">
-  <h3><u>Country Details Widget</u></h3>
+  <div class="child-target" />
+  <h3>
+    <span>Country Details Widget</span>
+    <span style="float: right; margin-top: -2.5px;" title="Add Country Component">
+      <button style="float: right; width: 2em; background: yellow;" id="add"
+        ng-click="$ctrl.showChildComponent()">
+        +
+      </button>
+    </span>
+  </h3>
   <table class="country-table">
     <thead>
       <tr>
@@ -21,8 +30,4 @@
       </tr>
     </tbody>
   </table>
-  <br />
-
-  <div class="child-target">
-  </div>
 </div>

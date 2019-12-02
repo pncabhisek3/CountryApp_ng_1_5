@@ -1,27 +1,41 @@
 <div class="country-wrapper">
-  <h3><u>Country Widget</u></h3>
-  <table class="add-country-table">
-    <tbody>
-      <tr>
-        <td>Country:</td>
-        <td><input type="text" ng-model="$ctrl.country.name" /></td>
-      </tr>
-      <tr>
-        <td>Capital:</td>
-        <td><input type="text" ng-model="$ctrl.country.capital" /></td>
-      </tr>
-      <tr>
-        <td>
-          <button class="add-country-btn" id="clear-country-btn">clear</button>
-        </td>
-        <td>
-          <button class="add-country-btn" id="add-country-btn">Add</button>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <div class="another-child-target">
-    <!-- <population-widget /> -->
+  <div class="cols column1">
+    <h3>
+        <span>Country Widget</span>
+        <span style="float: right; margin-top: -2.5px;" title="Close">
+            <button style="float: right; width: 2em; background: yellow;" id="add"
+              ng-click="$ctrl.closeCountryComponent()">
+              X
+            </button>
+          </span>
+    </h3>
+    <table class="add-country-table">
+      <tbody>
+        <tr>
+          <td>Country:</td>
+          <td><input type="text" ng-model="$ctrl.country.name" /></td>
+        </tr>
+        <tr>
+          <td>Capital:</td>
+          <td><input type="text" ng-model="$ctrl.country.capital" /></td>
+        </tr>
+        <tr>
+            <td>Population:</td>
+            <td> <button class="add-country-btn" id="add-population-btn" ng-click="$ctrl.showPopulationComponent()">
+                Add Population</button> </td>
+          </tr>
+        <tr>
+          <td colspan="2">
+            <button class="add-country-btn" id="clear-country-btn">
+              clear
+            </button>
+            <button class="add-country-btn" id="add-country-btn">Add</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="cols column2">
+    <div class="population-target" />
   </div>
 </div>

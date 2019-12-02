@@ -1,11 +1,7 @@
-.population-wrapper {
-  border: 2px solid teal;
-  padding: 5px;
-}
-
 table.add-population-table {
   background: whitesmoke;
   padding: 5px;
+  width: 100%;
 }
 
 .add-population-btn#add-population-btn {
