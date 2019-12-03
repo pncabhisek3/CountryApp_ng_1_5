@@ -18,13 +18,13 @@
       </tr>
     </thead>
     <tbody>
-      <tr ng-repeat="country in $ctrl.countries">
+      <tr ng-repeat="country in $ctrl.countries track by $index">
         <td>{{country.name}}</td>
         <td>{{country.capital}}</td>
         <td>
           <div>
-            <button id="edit">Edit</button>
-            <button id="delete">Delete</button>
+            <button id="edit" ng-click="$ctrl.editCountry($index)">Edit</button>
+            <button id="delete" ng-click="$ctrl.deleteCountry($index)">Delete</button>
           </div>
         </td>
       </tr>
